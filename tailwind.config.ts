@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "lightest-purple": "#efe6fe",
+        "darkest-purple": "#090119",
+      },
+      gridTemplateRows: {
+        'layout': '100px minmax(900px, 1fr) 100px',
+      }
     },
   },
   plugins: [],
