@@ -1,22 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import Github from './github.svg'
-import LinkedIn from './linkedin.svg'
+import Navigation from '@/app/components/navigation'
 
 export default function Home() {
   return (
-    <main className="grid gap-3 grid-cols-4 grid-rows-layout min-h-screen w-[90vw] mx-auto my-5">
-      <div className="flex align-text-bottom justify-between mb-5 col-span-4">
-        <h1 className="text-7xl">Abigail Bashore</h1>
-        <nav className="flex">
-          <Link className="m-2" target="_blank" href={"https://www.linkedin.com/in/abigail-bashore"}>
-            <LinkedIn />
-          </Link>
-          <Link className="m-2" target="_blank" href={"https://www.github.com/abbyjb"}>
-            <Github />
-          </Link>
-        </nav>
-      </div>      
+      <Navigation />  
       <Image
           className="rounded-lg my-2"
           src="/abbyjb-in-nyc.jpg"
