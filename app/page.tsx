@@ -5,8 +5,12 @@ export default function Home() {
   return (
       <Navigation />  
       <Image
-          className="rounded-lg my-2"
+          className="rounded-lg my-4"
           src="/abbyjb-in-nyc.jpg"
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
           width={300}
           height={300}
           alt="abby in nyc"
