@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         "purple": "#090119",
         "blue": "#1D2C39",
@@ -24,9 +19,6 @@ const config: Config = {
         "lighter-beige": "#EEEFDB",
         "off-white": "#F7F7F2",
       },
-      gridTemplateRows: {
-        'layout': '100px minmax(900px, 1fr) 100px',
-      }
     },
   },
   plugins: [],
