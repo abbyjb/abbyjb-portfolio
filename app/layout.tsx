@@ -20,7 +20,11 @@ export default function RootLayout({
       <body className={robotoMono.className}>
         <Navigation />  
         {children}
+        <footer className="fixed right-0 bottom-0 z-0">
+          <p className="text-off-white text-right m-2">&copy; Abigail Bashore 2024</p>
+        </footer>
       </body>
+      
     </html>
   );
 }
