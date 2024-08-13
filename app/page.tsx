@@ -2,31 +2,31 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col items-center justify-center">
       <div className="sm:flex sm:flex-row items-center justify-between mb-3 gap-3">
         <Image
-            className="my-3 sm:rounded-lg rounded-full"
+            className="my-3 md:rounded-lg rounded-full shadow-lg shadow-blue"
             src="/abbyjb-in-nyc.jpg"
             width={250}
             height={250}
             alt="abby in new york city"
           />
           <Image 
-            className="sm:block mx-auto hidden my-3 rounded-lg"
+            className="md:block mx-auto hidden my-3 rounded-lg shadow-lg shadow-blue"
             src="/abbyjb-running-5k.jpg"
             width={250}
             height={250}
             alt="abby running a 5k race"
           />
           <Image 
-            className="sm:block hidden my-3 rounded-lg"
+            className="lg:block hidden my-3 rounded-lg shadow-lg shadow-blue"
             src="/abbyjb-hockey-game.jpg"
             width={250}
             height={250}
             alt="abby at a NHL hockey game"
           />
       </div>
-      <div className="p-2 rounded-lg bg-beige min-w-[300px]">
+      <div className="p-2 rounded-lg bg-beige min-w-[300px] max-h-80 overflow-y-scroll shadow-xl shadow-blue">
         <p className="mb-4 text-lg text-purple">
           Hello, thanks for stopping by!
         </p>
@@ -41,7 +41,7 @@ export default function Home() {
         </p>
         <p className="text-lg text-purple">
           Outside of work I train for half marathons, watch NHL hockey with my family, and
-          enjoy playing video games and travelling with friends.
+          enjoy playing video games and traveling with friends.
         </p>
       </div>
     </main>

@@ -3,7 +3,7 @@ import ResumeSectionHeader from './components/resume-section-header'
 
 export default function ExperiencePage () {
   return (
-    <main className="rounded-lg bg-beige text-purple p-5 shadow-xl shadow-blue overflow-y-auto">
+    <main className="rounded-lg bg-beige text-purple p-5 shadow-xl shadow-blue overflow-y-scroll xl:max-h-[752px] max-h-[625px]">
       <ResumeSectionHeader name="Work Experience" icon_button />
       <ResumeItem
         company={"Greenhouse Software"} 
