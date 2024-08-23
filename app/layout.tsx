@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Merriweather_Sans } from "next/font/google";
 import "./globals.css";
-import Navigation from '@/app/components/navigation'
+import Menu from '@/components/menu'
 
 const merriweatherSans = Merriweather_Sans({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={merriweatherSans.className}>
-        <Navigation />  
+        <Menu />  
         {children}
         <footer className="fixed right-0 bottom-0">
           <p className="text-purple text-right m-2">&copy; Abigail Bashore 2024</p>
