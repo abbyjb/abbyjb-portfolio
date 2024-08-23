@@ -20,8 +20,8 @@ export default function RootLayout({
       <body className={merriweatherSans.className}>
         <Menu />  
         {children}
-        <footer className="fixed right-0 bottom-0">
-          <p className="text-purple text-right m-2">&copy; Abigail Bashore 2024</p>
+        <footer className="bg-delft_blue-900 md:fixed md:bottom-0 md:right-0 text-sm">
+          <p className="text-center m-2">&copy; Abigail Bashore 2024</p>
         </footer>
       </body>
     </html>
