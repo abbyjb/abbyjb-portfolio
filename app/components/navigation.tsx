@@ -4,12 +4,12 @@ import LinkedIn from '@/app/linkedin.svg'
 
 export default function Navigation() {
   return (
-    <nav className="flex sm:flex-row flex-col items-center justify-between my-7 ">
+    <nav className="flex xl:flex-row flex-col items-center justify-between mb-7 mt-2 gap-3">
       <Link className="grow" href="/" title="Home Page">
-        <h1 className="lg:text-7xl text-5xl sm:text-left sm:text-nowrap text-wrap text-center">Abigail Bashore</h1>
+        <h1 className="lg:text-7xl text-5xl sm:text-left sm:text-nowrap text-wrap text-center m-2">Abigail Bashore</h1>
       </Link>
       <div className="flex">
-        <Link className="lg:text-3xl lg:leading-none m-2 hover:transition-shadow hover:text-off-white hover:shadow-inner-md hover:bg-[#3A6669] hover:shadow-blue text-2xl rounded-lg p-2" href={"/experience"} title="View My Resume">
+        <Link className="lg:text-3xl lg:leading-none m-2 hover:transition-shadow hover:text-off-white hover:shadow-inner-md hover:bg-[#3A6669] hover:shadow-blue text-2xl rounded-lg p-2" href={"/resume"} title="View My Resume">
           Resume
         </Link>
         <Link className="lg:text-3xl lg:leading-none m-2 hover:transition-shadow hover:text-off-white hover:shadow-inner-md hover:bg-[#3A6669] hover:shadow-blue text-2xl rounded-lg p-2" href={"mailto:abbyjbdev@gmail.com"} title="Email Me">
@@ -24,7 +24,6 @@ export default function Navigation() {
           <Github className={"rounded-full lg:size-9 lg:leading-none hover:transition-shadow hover:shadow-xl hover:shadow-blue size-6"} />
         </Link>  
       </div>
-          
     </nav>  
   );
 }
