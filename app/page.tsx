@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-[85vh]">
+    <main className="flex flex-col items-center justify-center sm:my-16 my-8">
       <div className="sm:flex sm:flex-row items-center justify-between mb-3 gap-3">
         <Image
-            className="my-3 md:rounded-lg rounded-full border-8 border-sunglow-400"
+            className="my-3 rounded-lg border-8 border-sunglow-400"
             src="/abbyjb-in-nyc.jpg"
             width={250}
             height={250}
@@ -26,7 +26,7 @@ export default function Home() {
             alt="abby at a NHL hockey game"
           />
       </div>
-      <div className="p-4 rounded-lg max-w-[762px] text-2xl">
+      <div className="p-4 rounded-lg max-w-[762px] sm:text-2xl text-lg">
         <p className="mb-4">
           Hello, thanks for stopping by!
         </p>
