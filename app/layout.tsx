@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Merriweather_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from '@/app/components/navigation'
 
-const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+const merriweatherSans = Merriweather_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Abigail Bashore",
@@ -17,14 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={robotoMono.className}>
+      <body className={merriweatherSans.className}>
         <Navigation />  
         {children}
         <footer className="fixed right-0 bottom-0">
           <p className="text-purple text-right m-2">&copy; Abigail Bashore 2024</p>
         </footer>
       </body>
-      
     </html>
   );
 }
