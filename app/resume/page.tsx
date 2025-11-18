@@ -3,7 +3,7 @@ import ResumeSectionHeader from './components/resume-section-header'
 
 export default function ExperiencePage () {
   return (
-    <main className="rounded-lg bg-beige text-purple p-5 shadow-xl shadow-blue overflow-y-scroll xl:max-h-[752px] max-h-[600px]">
+    <main className="rounded-lg p-5 overflow-y-scroll max-h-[75vh] border-2 border-delft_blue-300">
       <ResumeSectionHeader name="Work Experience" icon_button />
       <ResumeItem
         company={"Greenhouse Software"} 
@@ -28,8 +28,8 @@ export default function ExperiencePage () {
         accomplishments={[
           "Constructed global redemption rewards application using AWS Lambda, DynamoDB, APIGateway, and React.",
           "Revamped internal cloud management application using Angular, PostgreSQL, and Java with Spring Boot",
-          "Built out transformation system that ingested a CSV of validation rules to a fully built React page served using NextJS",
-          "Pioneered shared component library using React/MaterialUI to drive consistency between micro applications",
+          "Built out transformation system that ingested a CSV of validation rules to a fully built React page served using NextJS.",
+          "Pioneered shared component library using React/MaterialUI to drive consistency between micro applications.",
           "Established website to showcase past hackathons and manage current hackathons using Angular, AWS Lambda, DynamoDB, API Gateway, and Cognito.",
         ]}
       />
