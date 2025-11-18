@@ -14,8 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "lightest-purple": "#efe6fe",
-        "darkest-purple": "#090119",
+        "purple": "#090119",
+        "blue": "#1D2C39",
+        "slate": "#315659",
+        "dark-green": "#5B7666",
+        "green": "#859673",
+        "light-green": "#B5BE9B",
+        "beige": "#E4E6C3",
+        "lighter-beige": "#EEEFDB",
+        "off-white": "#F7F7F2",
       },
       gridTemplateRows: {
         'layout': '100px minmax(900px, 1fr) 100px',
