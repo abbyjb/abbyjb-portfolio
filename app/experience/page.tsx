@@ -3,7 +3,7 @@ import ResumeSectionHeader from './components/resume-section-header'
 
 export default function ExperiencePage () {
   return (
-    <main className="rounded-lg bg-beige text-purple p-5 m-5 shadow-xl shadow-blue overflow-y-auto">
+    <main className="rounded-lg bg-beige text-purple p-5 shadow-xl shadow-blue overflow-y-auto">
       <ResumeSectionHeader name="Work Experience" icon_button />
       <ResumeItem
         company={"Greenhouse Software"} 
@@ -47,27 +47,30 @@ export default function ExperiencePage () {
 
       <ResumeSectionHeader name="Skills" />
       <div className="mb-3">
-        <h3 className="text-2xl">Core Technologies</h3>
-        <p className="text-lg"> Ruby on Rails, React, NextJS, Javascript, Typescript, Sidekiq, PostgresSQL, Amazon Web Services, GraphQL</p>
+        <h3 className="underline text-xl">Core Technologies</h3>
+        <p> Ruby on Rails, React, NextJS, Javascript, Typescript, Sidekiq, PostgresSQL, Amazon Web Services, GraphQL</p>
       </div>
       <div className="mb-3">
-        <h3 className="text-2xl">Tools</h3>
-        <p className="text-lg"> Rollbar, Datadog, Snowflake, Sorbet, Capybara, Docker, Webpack, Git</p>
+        <h3 className="underline text-xl">Tools</h3>
+        <p> Rollbar, Datadog, Snowflake, Sorbet, Capybara, Docker, Webpack, Git</p>
       </div>
      
       <ResumeSectionHeader name="Certifications" />
-      <div className="flex mb-3">
-        <p className="grow text-lg">Amazon Web Services Solutions Architect Associate</p>
+      <div className="flex">
+        <div className="grow">
+          <h3 className="text-xl">Amazon Web Services</h3>
+          <p className="italic">Solutions Architect, Associate</p>
+        </div>
         <p className="text-lg">Obtained March 2023</p>
       </div>
 
-      <ResumeSectionHeader name="Experience" />
+      <ResumeSectionHeader name="Education" />
       <div className="flex">
-        <h3 className="grow text-2xl">University of Denver, Denver, CO</h3>
+        <h3 className="grow text-xl">University of Denver, Denver, CO</h3>
         <p className="text-lg">Sept 2015 - June 2019</p>
       </div>
-      <p className="font-text-lg">Bachelors in Computer Science</p>
-      <p className="text-lg">Minors in Mathematics and Business Information/Analytics</p>
+      <p className="italic">Bachelors in Computer Science</p>
+      <p className="italic">Minors in Mathematics and Business Information/Analytics</p>
     </main>
   );
 }
